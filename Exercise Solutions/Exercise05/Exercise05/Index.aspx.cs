@@ -9,9 +9,18 @@ namespace Exercise05
 {
     public partial class Index : System.Web.UI.Page
     {
+        private string ageSelected;
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            if (DropDownList1.SelectedItem != null)
+                ageSelected = DropDownList1.SelectedItem.Value;
+            else
+                ageSelected = "Age not selected";
+
+            DropDownList1.DataSource = Enumerable.Range(0, 100).ToList();
+            DropDownList1.DataBind();
         }
 
         // JKE 1) Add event handler to button
@@ -22,7 +31,7 @@ namespace Exercise05
         {
             if (TextBox1.Text != "")
             {
-                Label1.Text = "Hello World, " + TextBox1.Text + ", whose age is " + MyList.SelectedValue + ".";
+                Label1.Text = "Hello World, " + TextBox1.Text + ", whose age is " + ageSelected + ".";
                 Label2.Text = "";
             }
             else
@@ -32,5 +41,10 @@ namespace Exercise05
 
         }
 
+
+
     }
 }
+
+
+   
