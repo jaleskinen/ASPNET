@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="Exercise04.Index" %>
+﻿<%@ Page Language="C#" UnobtrusiveValidationMode="None" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="Exercise04.Index" %>
 
 <!DOCTYPE html>
 
@@ -14,8 +14,9 @@ JKE 1) Add asp control named table here
 JKE: This table control should have two TableRow elements.
 JKE: Each table row should have two TableCell elements
 -->
-    <asp:Table ID="Table1" runat="server" CellPadding="2"
-GridLines="Both">
+
+           <asp:Table ID="Table1" runat="server" CellPadding="2"
+GridLines="both">
    <asp:TableRow>
      <asp:TableCell>Name:</asp:TableCell>
      <asp:TableCell>
@@ -26,9 +27,20 @@ GridLines="Both">
      <asp:TableCell>Age:</asp:TableCell>
      <asp:TableCell>
          <asp:TextBox id="TextBox2" runat="server" />
+         <asp:CompareValidator runat="server" Operator="DataTypeCheck" Type="Integer" ControlToValidate="TextBox2" ErrorMessage="Age must be a whole number. " /> 
+         <asp:RangeValidator runat="server" id="rngAge" controltovalidate="TextBox2" type="Integer" minimumvalue="0" maximumvalue="120" errormessage=" Please enter a valid Age (0-120)! " />
      </asp:TableCell>
    </asp:TableRow>
 </asp:Table>        
+       <ItemTemplate>
+<asp:DropDownList ID="cmbRooms" class="" runat="server" DataSource='<%# Enumerable.Range(0, 100) %>'>
+
+
+
+</asp:DropDownList>
+</ItemTemplate>
+
+
 
 <!-- JKE: Add button here with click based event trigger -->
 <p>
@@ -42,7 +54,6 @@ GridLines="Both">
 <p>
     <asp:Label id="Label2" runat="server" style="color:red" Font-Bold="true"/>
 </p>
-    
     </div>
     </form>
 </body>
