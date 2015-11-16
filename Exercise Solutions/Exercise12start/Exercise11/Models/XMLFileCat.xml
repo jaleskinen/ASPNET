@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- This is a comment -->
+<animallist>
+  <title>
+  </title>
+  <item>
+    <cat>
+      <race>Siamese</race>
+      <name>Sari</name>
+    </cat>
+    <weight amount="123">ValueA</weight>
+  </item>
+  <item>
+    <cat>
+      <race>Street</race>
+      <name>Sanna</name>
+    </cat>
+    <weight amount="456">ValueB</weight>
+  </item>
+</animallist>

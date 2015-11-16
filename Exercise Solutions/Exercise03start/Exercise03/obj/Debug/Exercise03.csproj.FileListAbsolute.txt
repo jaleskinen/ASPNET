@@ -1,0 +1,12 @@
+C:\Salo2014ASPNET\Exercise03\Exercise03\bin\Exercise03.dll.config
+C:\Salo2014ASPNET\Exercise03\Exercise03\bin\Exercise03.dll
+C:\Salo2014ASPNET\Exercise03\Exercise03\bin\Exercise03.pdb
+C:\Salo2014ASPNET\Exercise03\Exercise03\obj\Debug\Exercise03.csprojResolveAssemblyReference.cache
+C:\Salo2014ASPNET\Exercise03\Exercise03\obj\Debug\Exercise03.dll
+C:\Salo2014ASPNET\Exercise03\Exercise03\obj\Debug\Exercise03.pdb
+C:\Salo2014ASPNET\Exercise03start\Exercise03\bin\Exercise03.dll.config
+C:\Salo2014ASPNET\Exercise03start\Exercise03\bin\Exercise03.dll
+C:\Salo2014ASPNET\Exercise03start\Exercise03\bin\Exercise03.pdb
+C:\Salo2014ASPNET\Exercise03start\Exercise03\obj\Debug\Exercise03.csprojResolveAssemblyReference.cache
+C:\Salo2014ASPNET\Exercise03start\Exercise03\obj\Debug\Exercise03.dll
+C:\Salo2014ASPNET\Exercise03start\Exercise03\obj\Debug\Exercise03.pdb

@@ -1,0 +1,10 @@
+C:\Salo2014ASPNET\Exercise11\Exercise11\bin\Exercise11.dll.config
+C:\Salo2014ASPNET\Exercise11\Exercise11\bin\Exercise11.dll
+C:\Salo2014ASPNET\Exercise11\Exercise11\bin\Exercise11.pdb
+C:\Salo2014ASPNET\Exercise11\Exercise11\obj\Debug\Exercise11.dll
+C:\Salo2014ASPNET\Exercise11\Exercise11\obj\Debug\Exercise11.pdb
+C:\Salo2014ASPNET\Exercise12\Exercise11\bin\Exercise11.dll.config
+C:\Salo2014ASPNET\Exercise12\Exercise11\bin\Exercise11.dll
+C:\Salo2014ASPNET\Exercise12\Exercise11\bin\Exercise11.pdb
+C:\Salo2014ASPNET\Exercise12\Exercise11\obj\Debug\Exercise11.dll
+C:\Salo2014ASPNET\Exercise12\Exercise11\obj\Debug\Exercise11.pdb

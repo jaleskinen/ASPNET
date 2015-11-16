@@ -1,0 +1,18 @@
+C:\Salo2014ASPNET\Exercise03\Exercise03\bin\Exercise03.dll.config
+C:\Salo2014ASPNET\Exercise03\Exercise03\bin\Exercise03.dll
+C:\Salo2014ASPNET\Exercise03\Exercise03\bin\Exercise03.pdb
+C:\Salo2014ASPNET\Exercise03\Exercise03\obj\Debug\Exercise03.csprojResolveAssemblyReference.cache
+C:\Salo2014ASPNET\Exercise03\Exercise03\obj\Debug\Exercise03.dll
+C:\Salo2014ASPNET\Exercise03\Exercise03\obj\Debug\Exercise03.pdb
+D:\db\Opiframe1\Koulutusmateriaalit\Microsoftin Teknologiat\Web\ASP.NET Basics\Exercise Solutions\Exercise03\Exercise03\bin\Exercise03.dll.config
+D:\db\Opiframe1\Koulutusmateriaalit\Microsoftin Teknologiat\Web\ASP.NET Basics\Exercise Solutions\Exercise03\Exercise03\bin\Exercise03.dll
+D:\db\Opiframe1\Koulutusmateriaalit\Microsoftin Teknologiat\Web\ASP.NET Basics\Exercise Solutions\Exercise03\Exercise03\bin\Exercise03.pdb
+D:\db\Opiframe1\Koulutusmateriaalit\Microsoftin Teknologiat\Web\ASP.NET Basics\Exercise Solutions\Exercise03\Exercise03\obj\Debug\Exercise03.csprojResolveAssemblyReference.cache
+D:\db\Opiframe1\Koulutusmateriaalit\Microsoftin Teknologiat\Web\ASP.NET Basics\Exercise Solutions\Exercise03\Exercise03\obj\Debug\Exercise03.dll
+D:\db\Opiframe1\Koulutusmateriaalit\Microsoftin Teknologiat\Web\ASP.NET Basics\Exercise Solutions\Exercise03\Exercise03\obj\Debug\Exercise03.pdb
+C:\ASPNETKurssi\Exercise Solutions\Exercise03\Exercise03\bin\Exercise03.dll.config
+C:\ASPNETKurssi\Exercise Solutions\Exercise03\Exercise03\bin\Exercise03.dll
+C:\ASPNETKurssi\Exercise Solutions\Exercise03\Exercise03\bin\Exercise03.pdb
+C:\ASPNETKurssi\Exercise Solutions\Exercise03\Exercise03\obj\Debug\Exercise03.csprojResolveAssemblyReference.cache
+C:\ASPNETKurssi\Exercise Solutions\Exercise03\Exercise03\obj\Debug\Exercise03.dll
+C:\ASPNETKurssi\Exercise Solutions\Exercise03\Exercise03\obj\Debug\Exercise03.pdb

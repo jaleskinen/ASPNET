@@ -1,0 +1,5 @@
+C:\Salo2014ASPNET\Exercise05\Exercise05\bin\Exercise05.dll.config
+C:\Salo2014ASPNET\Exercise05\Exercise05\bin\Exercise05.dll
+C:\Salo2014ASPNET\Exercise05\Exercise05\bin\Exercise05.pdb
+C:\Salo2014ASPNET\Exercise05\Exercise05\obj\Debug\Exercise05.dll
+C:\Salo2014ASPNET\Exercise05\Exercise05\obj\Debug\Exercise05.pdb

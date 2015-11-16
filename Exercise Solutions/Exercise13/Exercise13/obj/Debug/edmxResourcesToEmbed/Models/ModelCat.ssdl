@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CompetitionDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CatTable">
+    <Key>
+      <PropertyRef Name="CatID" />
+    </Key>
+    <Property Name="CatID" Type="int" Nullable="false" />
+    <Property Name="OwnerID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="Age" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CatTable_SiameseTable">
+    <Key>
+      <PropertyRef Name="CatID" />
+    </Key>
+    <Property Name="Attitude" Type="int" Nullable="false" />
+    <Property Name="CatID" Type="int" Nullable="false" />
+    <Property Name="OwnerTable1_OwnerID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OwnerTable">
+    <Key>
+      <PropertyRef Name="OwnerID" />
+    </Key>
+    <Property Name="OwnerID" Type="int" Nullable="false" />
+    <Property Name="Ownername" Type="nchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_CatTable_OwnerTable">
+    <End Role="OwnerTable" Type="Self.OwnerTable" Multiplicity="1" />
+    <End Role="CatTable" Type="Self.CatTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OwnerTable">
+        <PropertyRef Name="OwnerID" />
+      </Principal>
+      <Dependent Role="CatTable">
+        <PropertyRef Name="OwnerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SiameseTable_inherits_CatTable">
+    <End Role="CatTable" Type="Self.CatTable" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="CatTable_SiameseTable" Type="Self.CatTable_SiameseTable" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="CatTable">
+        <PropertyRef Name="CatID" />
+      </Principal>
+      <Dependent Role="CatTable_SiameseTable">
+        <PropertyRef Name="CatID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SiameseTableOwnerTable">
+    <End Role="OwnerTable" Type="Self.OwnerTable" Multiplicity="1" />
+    <End Role="CatTable_SiameseTable" Type="Self.CatTable_SiameseTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OwnerTable">
+        <PropertyRef Name="OwnerID" />
+      </Principal>
+      <Dependent Role="CatTable_SiameseTable">
+        <PropertyRef Name="OwnerTable1_OwnerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="CompetitionDBModelStoreContainer">
+    <EntitySet Name="CatTable" EntityType="Self.CatTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CatTable_SiameseTable" EntityType="Self.CatTable_SiameseTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OwnerTable" EntityType="Self.OwnerTable" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_CatTable_OwnerTable" Association="Self.FK_CatTable_OwnerTable">
+      <End Role="OwnerTable" EntitySet="OwnerTable" />
+      <End Role="CatTable" EntitySet="CatTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SiameseTable_inherits_CatTable" Association="Self.FK_SiameseTable_inherits_CatTable">
+      <End Role="CatTable" EntitySet="CatTable" />
+      <End Role="CatTable_SiameseTable" EntitySet="CatTable_SiameseTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SiameseTableOwnerTable" Association="Self.FK_SiameseTableOwnerTable">
+      <End Role="OwnerTable" EntitySet="OwnerTable" />
+      <End Role="CatTable_SiameseTable" EntitySet="CatTable_SiameseTable" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

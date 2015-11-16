@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CompetitionDBModelStoreContainer" CdmEntityContainer="CompetitionDBEntities">
+    <EntitySetMapping Name="CatTable">
+      <EntityTypeMapping TypeName="CompetitionDBModel.CatTable">
+        <MappingFragment StoreEntitySet="CatTable">
+          <ScalarProperty Name="CatID" ColumnName="CatID" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CatTable_SiameseTable">
+      <EntityTypeMapping TypeName="CompetitionDBModel.CatTable_SiameseTable">
+        <MappingFragment StoreEntitySet="CatTable_SiameseTable">
+          <ScalarProperty Name="Attitude" ColumnName="Attitude" />
+          <ScalarProperty Name="CatID" ColumnName="CatID" />
+          <ScalarProperty Name="OwnerTable1_OwnerID" ColumnName="OwnerTable1_OwnerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OwnerTable">
+      <EntityTypeMapping TypeName="CompetitionDBModel.OwnerTable">
+        <MappingFragment StoreEntitySet="OwnerTable">
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+          <ScalarProperty Name="Ownername" ColumnName="Ownername" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

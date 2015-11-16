@@ -1,0 +1,9 @@
+C:\Salo2014ASPNET\Exercise13\Exercise13\bin\Exercise13.dll.config
+C:\Salo2014ASPNET\Exercise13\Exercise13\bin\Exercise13.dll
+C:\Salo2014ASPNET\Exercise13\Exercise13\bin\Exercise13.pdb
+C:\Salo2014ASPNET\Exercise13\Exercise13\bin\EntityFramework.dll
+C:\Salo2014ASPNET\Exercise13\Exercise13\bin\EntityFramework.SqlServer.dll
+C:\Salo2014ASPNET\Exercise13\Exercise13\bin\EntityFramework.xml
+C:\Salo2014ASPNET\Exercise13\Exercise13\bin\EntityFramework.SqlServer.xml
+C:\Salo2014ASPNET\Exercise13\Exercise13\obj\Debug\Exercise13.dll
+C:\Salo2014ASPNET\Exercise13\Exercise13\obj\Debug\Exercise13.pdb
