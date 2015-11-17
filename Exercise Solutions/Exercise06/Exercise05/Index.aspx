@@ -51,9 +51,6 @@ JKE: Each table row should have two TableCell elements
     <asp:Label id="Label2" runat="server" style="color:red" Font-Bold="true"/>
 </p>
 
-    
-
-
     </div>
     </form>
 </body>

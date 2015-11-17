@@ -11,11 +11,14 @@
     <div>
         <asp:Repeater ID="Repeater" runat="server" DataSourceID="RSSDataSource">     
             <ItemTemplate>         
-                <asp:HyperLink runat="server"             
+                <asp:HyperLink Target="_blank" runat="server"             
                     Text='<%# XPath("title") %>'              
-                    NavigateUrl='<%# XPath("guid") %>' />         
-                <asp:Label runat="server"              
-                    Text='<%# DateTime.Parse(XPath("pubDate").ToString()) %>' />         
+                    NavigateUrl='<%# XPath("guid") %>' /></br>
+
+                    <%# XPath("description") %>         
+                <%--<asp:Label runat="server"--%>              
+                    Julkaistu: '<%# DateTime.Parse(XPath("pubDate").ToString()) %>' <br />
+
                 </br>      
 
             </ItemTemplate>     

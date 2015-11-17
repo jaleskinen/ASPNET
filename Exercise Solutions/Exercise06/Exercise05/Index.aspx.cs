@@ -14,6 +14,7 @@ namespace Exercise05
         protected void Page_Load(object sender, EventArgs e)
         {
 
+
             if (DropDownList1.SelectedItem != null)
                 //ageSelected = DropDownList1.SelectedItem.Value;
                 Session["ageSelected"] = DropDownList1.SelectedItem.Value;
@@ -23,14 +24,17 @@ namespace Exercise05
 
         }
 
+
         // JKE 1) Add event handler to button
         // JKE: Write out to first label if element is correctly set
         // JKE: Write out to second element if element is incorrectly set. this text shouldf be red (use CSS)
         //
-        
+
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+
+
             if (TextBox1.Text != "")
             {
                 Label1.Text = "Hello " + TextBox1.Text + ", Your age is " + Session["ageSelected"] + ".";
