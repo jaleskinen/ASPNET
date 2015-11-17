@@ -9,7 +9,11 @@
 <body>
     <form id="form1" runat="server">
     <div>
-    <asp:Label id="Label3" runat="server" />
+        <asp:Label id="Label3" runat="server" />
+ 
+        <p>
+        <asp:Button Text="Go Back to Front Page!" runat="server" id="Button3" OnClick="Button3_Click"/>
+        </p>
     </div>
     </form>
 </body>

@@ -13,5 +13,14 @@ namespace Exercise05
         {
             Label3.Text = Session["Name"] + " " + Session["Age"];
         }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+
+
+
+            Response.Redirect("./index.aspx");
+
+        }
     }
 }

@@ -19,6 +19,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -69,6 +70,7 @@
     <Content Include="Index.aspx" />
     <Content Include="Models\XMLFileCat.xml" />
     <Content Include="Web.config" />
+    <Content Include="XMLFileCat.xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">

@@ -22,15 +22,6 @@ namespace Exercise11 {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// RSSDataSource control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.XmlDataSource RSSDataSource;
-        
-        /// <summary>
         /// Repeater control.
         /// </summary>
         /// <remarks>
@@ -38,5 +29,14 @@ namespace Exercise11 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Repeater Repeater;
+        
+        /// <summary>
+        /// RSSDataSource control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.XmlDataSource RSSDataSource;
     }
 }

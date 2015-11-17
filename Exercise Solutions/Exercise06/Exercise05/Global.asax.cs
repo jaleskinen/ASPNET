@@ -10,7 +10,13 @@ namespace Exercise05
     public class Global : System.Web.HttpApplication
     {
         protected void Application_Start(object sender, EventArgs e)
-        {
+        { 
         }
+
+        public void Session_OnStart()
+        {
+            Session["ageSelected"] = 0;
+        }
+
     }
 }

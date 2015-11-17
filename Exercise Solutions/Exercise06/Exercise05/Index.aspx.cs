@@ -9,13 +9,14 @@ namespace Exercise05
 {
     public partial class Index : System.Web.UI.Page
     {
-        private string ageSelected;
+        
+
         protected void Page_Load(object sender, EventArgs e)
         {
+
             if (DropDownList1.SelectedItem != null)
-                ageSelected = DropDownList1.SelectedItem.Value;
-
-
+                //ageSelected = DropDownList1.SelectedItem.Value;
+                Session["ageSelected"] = DropDownList1.SelectedItem.Value;
 
             DropDownList1.DataSource = Enumerable.Range(0, 100).ToList();
             DropDownList1.DataBind();
@@ -26,11 +27,13 @@ namespace Exercise05
         // JKE: Write out to first label if element is correctly set
         // JKE: Write out to second element if element is incorrectly set. this text shouldf be red (use CSS)
         //
+        
+
         protected void Button1_Click(object sender, EventArgs e)
         {
             if (TextBox1.Text != "")
             {
-                Label1.Text = "Hello World, " + TextBox1.Text + ", whose age is " + ageSelected + ".";
+                Label1.Text = "Hello " + TextBox1.Text + ", Your age is " + Session["ageSelected"] + ".";
                 Label2.Text = "";
             }
             else
@@ -43,10 +46,17 @@ namespace Exercise05
         protected void Button2_Click(object sender, EventArgs e)
         {
 
-
-            Session["Name"] = TextBox1.Text;
-            Session["Age"] = ageSelected;
-            Response.Redirect("./index2.aspx");
+            if (TextBox1.Text != "")
+            {
+                Session["Name"] = TextBox1.Text;
+                Session["Age"] = Session["ageSelected"];
+                Response.Redirect("./index2.aspx");
+            }
+            else
+            {
+                Label2.Text = "Information is missing!";
+            }
+  
 
         }
 

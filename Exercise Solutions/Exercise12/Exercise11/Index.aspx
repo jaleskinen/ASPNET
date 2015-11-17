@@ -9,31 +9,21 @@
 <body>
     <form id="form1" runat="server">
     <div>
-    <p> ASP.NET Repeater control is used here for RSS feed: </p>
 
-            <!-- JKE 1) Add a cat file as a XMLDataSource here
-    JKE: Set position of xmlfile as a DataFile.
-        -->
-   <asp:XmlDataSource ID="MyDataSource" runat="server" DataFile="/Models/XMLFileCat.xml" XPath="animallist/item">
-    </asp:XmlDataSource>    
+        <asp:Repeater ID="Repeater" runat="server" DataSourceID="XmlDataSource1">     
+            <ItemTemplate>         
+                <p>Cat values are: <br />
+                    Name: <strong><%# XPath("cat/name") %></strong><br />
+                    Race: <%# XPath("cat/race") %><br />
+                    Weight: <%# XPath("weight") %><br />
+                    Weight Amount: <%# XPath("weight/@amount") %><br />
+                </p>
+            </ItemTemplate>     
 
-    <!-- JKE 2) Add a ASP.NET element for a repeater here. 
-        JKE: use XmlDataSource element value of DataSourceID attribute
-        JKE: Parser data using XPath elements.        
-        -->
-    <asp:Repeater ID="Repeater" runat="server" DataSourceID="MyDataSource">
-    <ItemTemplate>
-        <p> cat values are: 
-        <strong> <%# XPath("cat/name") %> </strong>
-        <%# XPath("cat/race") %>
-        <%# XPath("weight") %>
-        <%# XPath("weight/@amount") %>
-        </p>
-    </ItemTemplate>
-    </asp:Repeater>
-    
+        </asp:Repeater>
 
-    
+        <asp:XmlDataSource ID="XmlDataSource1" runat="server" DataFile="/Models/XMLFileCat.xml" XPath="animallist/item"></asp:XmlDataSource>
+
     </div>
     </form>
 </body>

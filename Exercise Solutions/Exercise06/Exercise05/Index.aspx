@@ -16,8 +16,7 @@ JKE: Each table row should have two TableCell elements
 -->
         
 
-    <asp:Table ID="Table1" runat="server" CellPadding="2"
-GridLines="Both">
+    <asp:Table ID="Table1" runat="server" CellPadding="2" GridLines="Both">
        <asp:TableRow>
              <asp:TableCell>Name:</asp:TableCell>
              <asp:TableCell>
@@ -31,8 +30,7 @@ GridLines="Both">
                 <asp:DropDownList runat="server" id="DropDownList1"></asp:DropDownList>
             </asp:TableCell>
        </asp:TableRow> 
-    </asp:Table>      
-        
+    </asp:Table>          
  
              
 <!-- JKE: Add button here with click based event trigger -->
